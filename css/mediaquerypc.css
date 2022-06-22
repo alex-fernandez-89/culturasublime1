@@ -54,13 +54,14 @@
         font-size: 2em;
         text-align: center;
         text-decoration:underline 3px ;
-    
+        color: rgb(205, 63, 63);
     }
     .informacion p{
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 1.3em;
         text-align: center;
         margin: 1%;
+        color: rgb(255, 157, 0);
     }
 
 
@@ -71,6 +72,7 @@
         font-size: 2em;
         text-align: center;
         text-decoration:underline 1px ;
+        color: rgb(205, 63, 63);
     }
 
 
@@ -96,7 +98,7 @@
         font-size: 2em;
         text-align: center;
         text-decoration:underline 1px ;
-        color: red;
+        color: rgb(205, 63, 63);
     }
     
     .contenedorgaleria{
@@ -132,6 +134,7 @@
         font-size: 2.5em;
         text-align: center;
         text-decoration:underline 1px ;
+        color: rgb(205, 63, 63);
     }
 
     video{
@@ -167,12 +170,14 @@
     }
     
     .socialmedia img{
-        margin: 5px;
-        width: 12vw;
-        height: 10vh;
         
+        margin: 5px;
+        width: 8vw;
+        height: 10vh;
+        background-color: white;
         border-radius: 50%;
         border: black solid 2px;
+        
     }
     .container-boton{
         background-color: #64ed64af;
