@@ -172,7 +172,7 @@
         left: 0;
         z-index: 1000;
         padding-top: 30px;
-        width: 100%;
+        width: 80%;
         height: 100%;
         overflow: hidden;
         background-color: rgb(0, 0, 0);
@@ -192,7 +192,7 @@
         cursor: pointer;
     }*/
     .modal #mymodal{
-        width: 35vw;
+        width: 40vw;
         display: block;
         margin: auto;
         height: 40vh;
