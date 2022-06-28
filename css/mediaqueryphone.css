@@ -1,4 +1,4 @@
-@media (min-width: 350px) and (max-width: 576px){
+@media (min-width: 350px) and (max-width: 575px){
     
     
     body{
@@ -13,7 +13,7 @@
 
 
     .container-fluid .logo img{
-        width: 13vw;
+        width: 15vw;
         height: 10vh;
     }
 
@@ -21,13 +21,44 @@
         color: transparent;
         background-color: white;
     }
-    .navbar-nav .nav-link{
+    .navbar-nav .nav-linka{
+        text-decoration: none;
+        color: red;
+        font-size: 1.5em;
+        margin-right: 2%;
+        
+    }
+    .navbar-nav .nav-linkb{
+        text-decoration: none;
+        color: rgb(60, 196, 249);
+        font-size: 1.5em;
+        margin-right: 2%;
+    }
+    .navbar-nav .nav-linkc{
+        text-decoration: none;
+        color: rgb(215, 232, 101);
+        font-size: 1.5em;
+        margin-right: 2%;
+    }
+    .navbar-nav .nav-linkd{
+        text-decoration: none;
+        color: rgb(0, 255, 34);
+        font-size: 1.5em;
+        margin-right: 2%;
+    }
+    .navbar-nav .nav-linke{
+        text-decoration: none;
+        color: rgb(234, 0, 255);
+        font-size: 1.5em;
+        margin-right: 2%;
+    }
+    /*.navbar-nav .nav-link{
         color: rgb(252, 0, 0);
 
     }
     .navbar-nav .nav-link:hover{
         color: rgb(255, 255, 255);
-    }
+    }*/
 
     /*Section*/
     section{
@@ -62,7 +93,7 @@
         font-size: 1.3em;
         text-align: center;
         margin: 1%;
-        color: rgb(239, 87, 87);
+        color: lightcoral
     }
 
 
@@ -73,6 +104,7 @@
         font-size: 2em;
         text-align: center;
         text-decoration:underline 1px ;
+        color: rgb(255, 0, 0);
     }
 
 
@@ -101,24 +133,91 @@
         color: red;
     }
     
-    .contenedorgaleria{
-        display: flex;
-        padding: 2px;
-        flex-wrap: wrap;
-    }
-    .column{
-        margin: 3px;
-        flex: 23%;
-    }
-    .column img{
-        margin-right: 1px;
-        margin-bottom: 3px;
-        border: white 1px solid;
+    /*GALERIA*/
+    .gallery{
         width: 100%;
-        height: 25%;
+        height: 90%;
+        
+        display:grid;
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(5, 185px);
+    }
+    .gallery .img-card{
+       
+     margin: 0px 0px 0px 30px;
+      
+    }
+    .gallery .img-card img{
+        box-sizing: border-box;
+        width: 35vw;
+        height: 25vh;
+        transition: 0.5s;
+        cursor: pointer;
+        border: white solid 3px;
+        border-radius: 10px;
+    }
+    .gallery .img-card img:hover{
+       
+        transform: scale(1) rotate(0deg);
+        border: white solid 3px;
+        border-radius: 0px;
+        transition: 0;
+    }
+    /** MODAL **/
+    
+    .modal{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        padding-top: 30px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    /*.modal .list{
+        width: 95%;
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 100px);
+    }
+    .modal .list img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+    }*/
+    .modal #mymodal{
+        width: 25vw;
+        display: block;
+        margin: auto;
+        height: 40vh;
     }
 
-    
+    .modal .caption-text{
+        width: 80%;
+        display: block;
+        margin: auto;
+        max-width: 700px;
+        text-align: center;
+        color: white;
+        padding: 10px 0px;
+    }
+
+    .close{
+        position: absolute;
+        top:15px;
+        right: 35px;
+        color: white;
+        font-weight: bold;
+        transition: 0.3s;
+        font-size: 40px;
+        cursor: pointer;
+    }
 
 /*<-----Footer---->*/
     footer{
@@ -134,11 +233,11 @@
 
     video{
         background-color: black;
-        width: 49vw;
+        width: 100vw;
         height: 40vh;
     }
     .mapa{
-        width: 49vw;
+        width: 100vw;
         height: 40vh;
     }
     .direccion{
@@ -178,8 +277,8 @@
         position: fixed;
         z-index: 999;
         border-radius: 50%;
-        bottom: 2%;
-        right: 4vh;
+        bottom: 5%;
+        right: 6vh;
         padding: 15px;
         transition: ease 0.3s;
         animation: none
