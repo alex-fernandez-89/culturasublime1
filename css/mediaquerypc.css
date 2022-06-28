@@ -38,32 +38,32 @@
     .navbar-nav .nav-linka{
         text-decoration: none;
         color: red;
-        font-size: 1.7em;
+        font-size: 1.6em;
         margin-right: 4%;
         
     }
     .navbar-nav .nav-linkb{
         text-decoration: none;
         color: rgb(60, 196, 249);
-        font-size: 1.7em;
+        font-size: 1.6em;
         margin-right: 4%;
     }
     .navbar-nav .nav-linkc{
         text-decoration: none;
         color: rgb(215, 232, 101);
-        font-size: 1.7em;
+        font-size: 1.6em;
         margin-right: 4%;
     }
     .navbar-nav .nav-linkd{
         text-decoration: none;
         color: rgb(0, 255, 34);
-        font-size: 1.7em;
+        font-size: 1.6em;
         margin-right: 4%;
     }
     .navbar-nav .nav-linke{
         text-decoration: none;
         color: rgb(234, 0, 255);
-        font-size: 1.7em;
+        font-size: 1.6em;
         margin-right: 4%;
     }
     /*Hover links*/
@@ -187,11 +187,9 @@
    
     
     .gallery{
-        width: 90%;
-        height: 70vh;
-        margin-top: 1%;
-        margin-left: 5%;
-        margin-bottom: 0%;
+        width: 60%;
+        
+        
         display:grid;
         grid-template-columns: repeat(5, 240px);
         grid-template-rows: repeat(2, 185px);
