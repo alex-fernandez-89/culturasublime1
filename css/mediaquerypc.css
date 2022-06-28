@@ -187,9 +187,11 @@
    
     
     .gallery{
-        width: 60%;
+        width: 90%;
         
-        
+        margin-top: 1%;
+        margin-left: 5%;
+        margin-bottom: 0%;
         display:grid;
         grid-template-columns: repeat(5, 240px);
         grid-template-rows: repeat(2, 185px);
